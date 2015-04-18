@@ -2,15 +2,14 @@ Revision history for Exception-Delayed
 
 {{$NEXT}}
 
+0.002 2015-04-18
  [API CHANGES]
 
  [BUG FIXES]
 
  [DOCUMENTATION]
- - fix missing call in example
 
  [ENHANCEMENTS]
- - new method: wantany
 
 0.001 2015-04-18
  - Initial release
