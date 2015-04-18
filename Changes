@@ -2,16 +2,17 @@ Revision history for Exception-Delayed
 
 {{$NEXT}}
 
-0.001 2015-04-18
- - Initial release
-
  [API CHANGES]
 
  [BUG FIXES]
 
  [DOCUMENTATION]
+ - fix missing call in example
 
  [ENHANCEMENTS]
+
+0.001 2015-04-18
+ - Initial release
 
 0.000 0000-00-00
 

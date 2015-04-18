@@ -27,7 +27,7 @@ Since the context cannot be guessed, this module provides two entry-points: L</w
 
 =head2 wantscalar
 
-    my $x = Exception::Delayed->wantscalar($coderef, @arguments);
+    my $x = Exception::Delayed->wantscalar($coderef, @arguments)->result;
     # same as:
     my $x = scalar $coderef->(@arguments);
 
@@ -50,7 +50,7 @@ sub wantscalar {
 
 =head2 wantlist
 
-    my @x = Exception::Delayed->wantscalar($coderef, @arguments);
+    my @x = Exception::Delayed->wantscalar($coderef, @arguments)->result;
     # same as:
     my @x = $coderef->(@arguments);
 
