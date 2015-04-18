@@ -71,6 +71,26 @@ sub wantlist {
     }
 }
 
+=head2 wantany
+
+    sub xxx {
+        my $x = Exception::Delayed->wantany(wantarray, $coderef, @arguments);
+        retrun $x->result;
+    }
+
+Execute code in a list context or in a scalar context, depending on the first parameter, which should be the return value of C<wantarray()>.
+
+=cut
+
+sub wantany {
+    my ($class, $wantarray, $code, @args) = @_;
+    if ($wantarray) {
+        return $class->wantlist($code, @args);
+    } else {
+        return $class->wantscalar($code, @args);
+    }
+}
+
 =head2 result
 
 Return the result of the executed code. Or dies, if there was any exception.
